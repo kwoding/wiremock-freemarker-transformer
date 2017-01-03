@@ -1,0 +1,6 @@
+{
+    "date": "${(.now)}",
+    "message": "Value of message",
+    "test": "${request.nonexisting.batter[1].id} ${request.batters.batter[1].type}",
+    "test2": "${request.topping[2].id} ${request.topping[2].type}"
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "0001",
+    "type": "donut",
+    "name": "Cake",
+    "ppu": 0.55,
+    "batters":
+    {
+      "batter":
+      [
+        { "id": "1001", "type": "Regular" },
+        { "id": "1002", "type": "Chocolate" },
+        { "id": "1003", "type": "Blueberry" },
+        { "id": "1004", "type": "Devil's Food" }
+      ]
+    },
+    "topping":
+    [
+      { "id": "1011", "type": "None" },
+      { "id": "1012", "type": "Glazed" },
+      { "id": "1015", "type": "Sugar" },
+      { "id": "1017", "type": "Powdered Sugar" },
+      { "id": "1016", "type": "Chocolate with Sprinkles" },
+      { "id": "1013", "type": "Chocolate" },
+      { "id": "1014", "type": "Maple" }
+    ]
+  },
+  {
+    "id": "0002",
+    "type": "donut",
+    "name": "Raised",
+    "ppu": 0.55,
+    "batters":
+    {
+      "batter":
+      [
+        { "id": "2001", "type": "Regular2" }
+      ]
+    },
+    "topping":
+    [
+      { "id": "2011", "type": "None2" },
+      { "id": "2012", "type": "Glazed2" },
+      { "id": "2015", "type": "Sugar2" },
+      { "id": "2013", "type": "Chocolate2" },
+      { "id": "2014", "type": "Maple2" }
+    ]
+  },
+  {
+    "id": "0003",
+    "type": "donut",
+    "name": "Old Fashioned",
+    "ppu": 0.55,
+    "batters":
+    {
+      "batter":
+      [
+        { "id": "3001", "type": "Regular3" },
+        { "id": "3002", "type": "Chocolate3" }
+      ]
+    },
+    "topping":
+    [
+      { "id": "3011", "type": "None3" },
+      { "id": "3012", "type": "Glazed3" },
+      { "id": "3013", "type": "Chocolate3" },
+      { "id": "3014", "type": "Maple3" }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+<items>
+    <item id="0001" type="donut">
+        <name>Cake</name>
+        <ppu>0.55</ppu>
+        <batters>
+            <batter id="1001">Regular</batter>
+            <batter id="1002">Chocolate</batter>
+            <batter id="1003">Blueberry</batter>
+            <batter id="1004">Devil's Food</batter>
+        </batters>
+        <topping id="1011">None</topping>
+        <topping id="1012">Glazed</topping>
+        <topping id="1015">Sugar</topping>
+        <topping id="1016">Sprinkles</topping>
+        <topping id="1013">Chocolate</topping>
+        <topping id="1014">Maple</topping>
+    </item>
+    <item id="0002" type="donut">
+        <name>Raised</name>
+        <ppu>0.55</ppu>
+        <batters>
+            <batter id="2001">Regular2</batter>
+        </batters>
+        <topping id="2011">None2</topping>
+        <topping id="2012">Glazed2</topping>
+        <topping id="2015">Sugar2</topping>
+        <topping id="2013">Chocolate2</topping>
+        <topping id="2014">Maple2</topping>
+    </item>
+    <item id="0003" type="donut">
+        <name>Old Fashioned</name>
+        <ppu>0.55</ppu>
+        <batters>
+            <batter id="3001">Regular3</batter>
+            <batter id="3002">Chocolate3</batter>
+        </batters>
+        <topping id="3011">None3</topping>
+        <topping id="3012">Glazed3</topping>
+        <topping id="3013">Chocolate3</topping>
+        <topping id="3014">Maple3</topping>
+    </item>

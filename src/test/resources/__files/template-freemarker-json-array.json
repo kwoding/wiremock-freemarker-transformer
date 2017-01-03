@@ -1,0 +1,8 @@
+{
+    <#list ['a', 'b', 'c'] as i>
+    "${i?counter}": "${i}",
+    </#list>
+    "message": "Value of message",
+    "test": "${request[0].batters.batter[1].id} ${request[0].batters.batter[1].type}",
+    "test2": "${request[1].topping[2].id} ${request[1].topping[2].type}"
+}
