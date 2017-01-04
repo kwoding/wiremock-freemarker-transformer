@@ -193,9 +193,7 @@ public class FreeMarkerTransformer extends ResponseDefinitionTransformer {
         Matcher matcherFreeMarkerVariable = patternFreeMarkerVariable.matcher(template);
         Matcher matcherFreeMarkerBlock = patternFreeMarkerBlock.matcher(template);
 
-        if (matcherFreeMarkerVariable.find()) {
-            return true;
-        } else if (matcherFreeMarkerBlock.find()) {
+        if (matcherFreeMarkerVariable.find() || matcherFreeMarkerBlock.find()) {
             return true;
         } else {
             return false;

@@ -4,7 +4,7 @@
     <groupId>com.github.kwoding</groupId>
     <artifactId>wiremock-freemarker-transformer</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>wiremock-freemarker-transformer</name>
     <url>http://maven.apache.org</url>
 

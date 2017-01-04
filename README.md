@@ -10,9 +10,9 @@ Wiremock FreeMarker Transformer is a [Wiremock](http://wiremock.org/) extension.
 ####Maven dependency
 ```
 <dependency>
-		<groupId>com.github.kwoding.wiremock.extension</groupId>
-		<artifactId>freemarker-transformer</artifactId>
-		<version>1.0.0</version>
+		<groupId>com.github.kwoding</groupId>
+		<artifactId>wiremock-freemarker-transformer</artifactId>
+		<version>1.0.1</version>
 </dependency>
 ```
 
@@ -22,12 +22,12 @@ Wiremock FreeMarker Transformer is a [Wiremock](http://wiremock.org/) extension.
 
 For Unix:
 ```
-java -cp "wiremock-standalone-2.4.1.jar:wiremock-freemarker-transformer-1.0.0.jar" com.github.tomakehurst.wiremock.standalone.WireMockServerRunner --extensions com.github.kwoding.wiremock.extension.FreeMarkerTransformer
+java -cp "wiremock-standalone-2.4.1.jar:wiremock-freemarker-transformer-1.0.1.jar" com.github.tomakehurst.wiremock.standalone.WireMockServerRunner --extensions com.github.kwoding.wiremock.extension.FreeMarkerTransformer
 ```
 
 For Windows:
 ```
-java -cp "wiremock-standalone-2.4.1.jar;wiremock-freemarker-transformer-1.0.0.jar" com.github.tomakehurst.wiremock.standalone.WireMockServerRunner --extensions com.github.kwoding.wiremock.extension.FreeMarkerTransformer
+java -cp "wiremock-standalone-2.4.1.jar;wiremock-freemarker-transformer-1.0.1.jar" com.github.tomakehurst.wiremock.standalone.WireMockServerRunner --extensions com.github.kwoding.wiremock.extension.FreeMarkerTransformer
 ```
 
 ###How to use
