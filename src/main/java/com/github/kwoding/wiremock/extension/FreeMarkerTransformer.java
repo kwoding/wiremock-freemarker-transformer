@@ -158,25 +158,26 @@ public class FreeMarkerTransformer extends ResponseDefinitionTransformer {
     private void setFreeMarkerRequestBodyVariable(Map data, String requestBody) throws TemplateModelException, IOException, ParserConfigurationException, SAXException {
 
         ObjectMapper objectMapper = new ObjectMapper();
+        String requestBodyFreeMarkerVariableName = "request";
 
         try {
             // Convert JSON string to Map (in case of JSON object)
             Map<String, Object> requestMap = objectMapper.readValue(requestBody, new TypeReference<HashMap<String, Object>>() {
             });
-            data.put("request", requestMap);
+            data.put(requestBodyFreeMarkerVariableName, requestMap);
 
         } catch (JsonMappingException jme) {
 
             // Convert JSON string to List (in case of JSON array)
             List<Object> requestList = objectMapper.readValue(requestBody, new TypeReference<ArrayList<Object>>() {
             });
-            data.put("request", requestList);
+            data.put(requestBodyFreeMarkerVariableName, requestList);
 
         } catch (IOException ioe) {
 
             // Use FreeMarker's node model to parse the XML
             NodeModel requestNodeModel = NodeModel.parse(new InputSource(new StringReader(requestBody)));
-            data.put("request", requestNodeModel);
+            data.put(requestBodyFreeMarkerVariableName, requestNodeModel);
         }
     }
 
@@ -193,11 +194,7 @@ public class FreeMarkerTransformer extends ResponseDefinitionTransformer {
         Matcher matcherFreeMarkerVariable = patternFreeMarkerVariable.matcher(template);
         Matcher matcherFreeMarkerBlock = patternFreeMarkerBlock.matcher(template);
 
-        if (matcherFreeMarkerVariable.find() || matcherFreeMarkerBlock.find()) {
-            return true;
-        } else {
-            return false;
-        }
+        return (matcherFreeMarkerVariable.find() || matcherFreeMarkerBlock.find());
     }
 
 }
